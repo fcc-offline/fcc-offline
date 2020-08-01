@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Add Images to Your Website</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="./index.html">/responsive-web-design</a>
+        <h1 id="add-images-to-your-website">Add Images to Your Website</h1>
+<p>You can add images to your website by using the <code>img</code> element, and point to a specific image's URL using the <code>src</code> attribute.</p>
+<p>An example of this would be:</p>
+<pre><code class="html language-html">&lt;img src="https://www.your-image-source.com/your-image.jpg"&gt;
+</code></pre>
+<p>Note that <code>img</code> elements are self-closing.</p>
+<p>All <code>img</code> elements <strong>must</strong> have an <code>alt</code> attribute. The text inside an <code>alt</code> attribute is used for screen readers to improve accessibility and is displayed if the image fails to load.</p>
+<p><strong>Note</strong>: If the image is purely decorative, using an empty <code>alt</code> attribute is a best practice.</p>
+<p>Ideally the <code>alt</code> attribute should not contain special characters unless needed.</p>
+<p>Let's add an <code>alt</code> attribute to our <code>img</code> example above:</p>
+<pre><code class="html language-html">&lt;img src="https://www.your-image-source.com/your-image.jpg" alt="Author standing on a beach with two thumbs up."&gt;
+</code></pre>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>Let's try to add an image to our website:</p>
+<p>Within the existing <code>main</code> element, insert an <code>img</code> element before the existing <code>p</code> elements.</p>
+<p>Now set the <code>src</code> attribute so that it points to this url:
+<code>../images/fcc-relaxing-cat.jpg</code></p>
+<p>Finally, don't forget to give your <code>img</code> element an <code>alt</code> attribute with applicable text.</p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your page should have an image element <!--count("img")===1--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your image should have a src attribute that points to the kitten image  <!--countHTML("src=\"../images/fcc-relaxing-cat.jpg\"")===1--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your image element's alt attribute should not be empty <!--countHTML("alt=\".+\"")===1--></li>
+</ul>
+<hr />
+<ul>
+<li>Prev: <a href="introduction-to-html-elements.html">Introduction to HTML5 Elements</a></li>
+<li>Next: <a href="link-with-anchor-element.html">Link to External Pages with Anchor Elements</a></li>
+</ul>
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <div class="fcc-viewer"></div>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      let code = `<h2>CatPhotoApp</h2>\n<main>\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n<p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n</main>`;
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Link to External Pages with Anchor Elements</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="./index.html">/responsive-web-design</a>
+        <h1 id="link-to-external-pages-with-anchor-elements">Link to External Pages with Anchor Elements</h1>
+<p>You can use <code>a</code> (anchor) elements to link to content outside of your web page.</p>
+<p><code>a</code> elements need a destination web address called an <code>href</code> attribute. They also need anchor text. Here's an example:</p>
+<pre><code class="html language-html">&lt;a href="https://freecodecamp.org"&gt;this links to freecodecamp.org&lt;/a&gt;
+</code></pre>
+<p>Then your browser will display the text <code>this links to freecodecamp.org</code> as a link you can click. And that link will take you to the web address <code>https://www.freecodecamp.org</code>.</p>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>Create an <code>a</code> element that links to <code>https://freecatphotoapp.com</code> and has <code>cat photos</code> as its anchor text.</p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>a</code> element should have the anchor text of "cat photos" <!--innerText("a")==="cat photos"--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> You need the <code>a</code> element that links to https://freecatphotoapp.com <!--hasAttr("a", "href", "https://freecatphotoapp.com/")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your a element should have a closing tag  <!--countHTML("/a&gt;")===1--></li>
+</ul>
+<hr />
+<ul>
+<li>Prev: <a href="delete-html-elements.html">Delete HTML Elements</a></li>
+<li>Next: <a href="add-images.html">Add Images to Your Website</a></li>
+</ul>
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <div class="fcc-viewer"></div>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      let code = `<h2>CatPhotoApp</h2>\n<main>\n\n<img src="{{public(images/fcc-relaxing-cat.jpg)}}" alt="A cute orange cat lying on its back.">\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n<p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>\n</main>`;
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>

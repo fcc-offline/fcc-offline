@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Delete HTML Elements</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="./index.html">/responsive-web-design</a>
+        <h1 id="delete-html-elements">Delete HTML Elements</h1>
+<p>Our phone doesn't have much vertical space.</p>
+<p>Let's remove the unnecessary elements so we can start building our CatPhotoApp.</p>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>Delete your <code>h1</code> element so we can simplify our view.</p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>h1</code> element should be deleted <!--!has("h1")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>h2</code> element should be on the page <!--has("h2")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>p</code> element should be on the page <!--has("p")--></li>
+</ul>
+<hr />
+<ul>
+<li>Prev: <a href="comment-out-html.html">Comment out HTML</a></li>
+<li>Next: <a href="introduction-to-html-elements.html">Introduction to HTML elements</a></li>
+</ul>
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <div class="fcc-viewer"></div>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      let code = `<h1>Hello</h1>\n\n<h2>CatPhotoApp</h2>\n\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>`;
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>

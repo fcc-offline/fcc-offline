@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Say Hello to HTML Elements</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="./index.html">/responsive-web-design</a>
+        <h1 id="say-hello-to-html-elements">Say Hello to HTML Elements</h1>
+<p>Welcome to freeCodeCamp's HTML coding challenges. These will walk you through web development step-by-step.
+First, you'll start by building a simple web page using HTML.</p>
+<p>Do you see the code in your code editor that says <code>&lt;h1&gt;Hello&lt;/h1&gt;</code>? That's an HTML element.</p>
+<p>Most HTML elements have an opening tag and a closing tag.</p>
+<p>Opening tags look like this <code>&lt;h1&gt;</code>. Closing tags look like this <code>&lt;/h1&gt;</code>.</p>
+<p>The only difference between opening and closing tags is the forward slash after the opening bracket of a closing tag.</p>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>To pass the test on this challenge, change your h1 element's text to say "Hello World".</p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your h1 element should have the text "Hello World" <!--innerText("h1") === "Hello World"--></li>
+</ul>
+<hr />
+<ul>
+<li>Prev: <a href="introduction.html">Introduction - Before you start</a></li>
+<li>Next: <a href="headline-with-h2-element.html">Headline with the h2 element</a></li>
+</ul>
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <div class="fcc-viewer"></div>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      let code = `<h1>Hello</h1>`;
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>
