@@ -1,9 +1,9 @@
 <!--
 template=home
-title=Basic HTML and HTML5
+title=Responsive Web Design
 -->
 
 Table of contents
 
-- [Responsive web design](responsive-web-design/index.html)
+- [Basic HTML and HTML5](basic-html-and-html5/index.html)
 - [Basic CSS](basic-css/index.html)

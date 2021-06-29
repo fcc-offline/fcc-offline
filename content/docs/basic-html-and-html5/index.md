@@ -1,6 +1,6 @@
 <!--
 template=home
-title=Responsive Web Design
+title=Basic HTML and HTML5
 -->
 
 Table of contents:
