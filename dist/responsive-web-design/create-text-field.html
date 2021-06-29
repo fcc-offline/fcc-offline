@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Create a Text Field</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="index.html">/Responsive Web Design
+</a>
+        <h1>17. Create a Text Field</h1>
+        <!--
+title=Create a Text Field
+code=<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="../images/fcc-relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+
+
+</main>
+-->
+<p>Now let's create a web form.</p>
+<p><code>input</code> elements are a convenient way to get input from your user.</p>
+<p>You can create a text input like this:</p>
+<pre><code class="html language-html">&lt;input type="text"&gt;
+</code></pre>
+<p>Note that <code>input</code> elements are self-closing.</p>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>Create an <code>input</code> element of type <code>text</code> below your lists.</p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your app should have an input element of type text <!--count("input")===1--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your input element should have <code>type</code> of <code>text</code> <!--hasAttr("input","type","text")--></li>
+</ul>
+        <hr />
+        <p>Prev: <a href="create-ordered-list.html">16. Create an Ordered List</a></p>
+                <p>Next: <a href="add-placeholder-to-text-field.html">18. Add Placeholder Text to a Text Field</a></p>
+        
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <!-- <div class="fcc-viewer"></div> -->
+      <iframe class="fcc-viewer" id="frameContent" src="about:blank"></iframe>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script>
+      let code = `<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="../images/fcc-relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+
+
+</main>
+`;
+      let asIframe = ``.indexOf("true") !== -1;
+    </script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Uncomment HTML</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="index.html">/Responsive Web Design
+</a>
+        <h1>5. Uncomment HTML</h1>
+        <!--
+title=Uncomment HTML
+code=<\!--\n<h1>Hello</h1>\n--\>\n<\!--\n<h2>CatPhotoApp</h2>\n--\>\n<\!--\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n--\>
+-->
+<p>Commenting is a way that you can leave comments for other developers within your code without affecting the resulting output that is displayed to the end user.</p>
+<p>Commenting is also a convenient way to make code inactive without having to delete it entirely.</p>
+<p>Comments in HTML start with <code>&lt;!--</code></p>
+<p>And end with a <code>--&gt;</code></p>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>Uncomment your <code>h1</code>, <code>h2</code> and <code>p</code> elements.</p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>h1</code> element should be visible on the page by uncommenting it <!--has("h1")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>h2</code> element should be visible on the page by uncommenting it <!--has("h2")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>p</code> element should be visible on the page by uncommenting it <!--has("p")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> No trailing comment tags should be visible on the page (i.e. <code>--&gt;</code>) <!--!hasText("--&gt;")--></li>
+</ul>
+        <hr />
+        <p>Prev: <a href="placeholder.html">4. Fill in the Blank with Placeholder Text</a></p>
+                <p>Next: <a href="comment-out-html.html">6. Comment out HTML</a></p>
+        
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <!-- <div class="fcc-viewer"></div> -->
+      <iframe class="fcc-viewer" id="frameContent" src="about:blank"></iframe>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script>
+      let code = `<\!--\n<h1>Hello</h1>\n--\>\n<\!--\n<h2>CatPhotoApp</h2>\n--\>\n<\!--\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>\n--\>
+`;
+      let asIframe = ``.indexOf("true") !== -1;
+    </script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{title}}</title>
+    <link href="{{public(styles/main.css)}}" rel="stylesheet" />
+  </head>
+  <body class="page">
+    <div class="container fcc-content">
+      {{if globals.sub_dir_link}}<a href="{{sub_dir_link}}">/{{sub_dir_name}}</a>{{endif}}
+      <h1>{{title}}</h1>
+      {{content}}
+    </div>
+    <footer>
+      Lessons and challenges are desigend by
+      <a
+        target="_blank"
+        rel="noreferrer noopener"
+        href="https://freecodecamp.com"
+        >freeCodeCamp</a
+      >
+      <br />
+      <a
+        target="_blank"
+        rel="noreferrer noopener"
+        href="https://fcc-offline.github.io/"
+        >fcc-offline</a
+      >
+      is free, created by
+      <a
+        target="_blank"
+        rel="noreferrer noopener"
+        href="https://twitter.com/hieunc229"
+        >hieunc229</a
+      >
+      <br />
+    </footer>
+  </body>
+</html>

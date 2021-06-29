@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Create an Ordered List</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="index.html">/Responsive Web Design
+</a>
+        <h1>16. Create an Ordered List</h1>
+        <!--
+title=Create an Ordered List
+code=<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="../images/fcc-relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+
+</main>
+-->
+<p>HTML has another special element for creating ordered lists, or numbered lists.</p>
+<p>Ordered lists start with an opening <ol> element, followed by any number of <li> elements. Finally, ordered lists are closed with the </ol> tag.</p>
+<p>For example:</p>
+<pre><code class="html language-html">&lt;ol&gt;
+  &lt;li&gt;Garfield&lt;/li&gt;
+  &lt;li&gt;Sylvester&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+<p>would create a numbered list of "Garfield" and "Sylvester".</p>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>Create an ordered list of the top 3 things cats hate the most.</p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> You should have an ordered list for "Top 3 things cats hate:" <!--hasText("Top 3 things cats hate:")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> You should have an unordered list for "Things cats love:" <!--hasText("Things cats love:")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> You should have only one ul element <!--count("ul")===1--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> You should have only one ol element <!--count("ol")===1--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> You should have three li elements within your ul element <!--count("ul li")===3--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> You should have three li elements within your ol element <!--count("ol li")===3--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your ul element should have a closing tag <!--count("ul")===countHTML("&lt;/ul")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your ol element should have a closing tag <!--count("ol")===countHTML("&lt;/ol")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your li element should have a closing tag <!--count("li")===countHTML("&lt;/li")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> The li elements in your unordered list should not be empty <!--!isEmpty("ul li",true)--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> The li elements in your ordered list should not be empty <!--!isEmpty("ol li",true)--></li>
+</ul>
+        <hr />
+        <p>Prev: <a href="create-bulleted-unordered-list.html">15. Create a Bulleted Unordered List</a></p>
+                <p>Next: <a href="create-text-field.html">17. Create a Text Field</a></p>
+        
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <!-- <div class="fcc-viewer"></div> -->
+      <iframe class="fcc-viewer" id="frameContent" src="about:blank"></iframe>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script>
+      let code = `<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="../images/fcc-relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+
+</main>
+`;
+      let asIframe = ``.indexOf("true") !== -1;
+    </script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>

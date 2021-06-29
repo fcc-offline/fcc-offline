@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Link to Link to Internal Sections of a Page with Anchor Elements</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="index.html">/Responsive Web Design
+</a>
+        <h1>11. Link to Link to Internal Sections of a Page with Anchor Elements</h1>
+        <!--
+title=Link to Link to Internal Sections of a Page with Anchor Elements
+code=<h2>CatPhotoApp</h2>
+<main>
+  <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>
+  <img src="../images/fcc-relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+</main>
+<footer>Copyright Cat Photo App</footer>
+-->
+<p><code>a</code> (anchor) elements can also be used to create internal links to jump to different sections within a webpage.</p>
+<p>To create an internal link, you assign a link's <code>href</code> attribute to a hash symbol <code>#</code> plus the value of the <code>id</code> attribute for the element that you want to internally link to, usually further down the page. You then need to add the same <code>id</code>attribute to the element you are linking to. An <code>id</code> is an attribute that uniquely describes an element.</p>
+<p>Below is an example of an internal anchor link and its target element:</p>
+<pre><code class="html language-html">&lt;a href="#contacts-header"&gt;Contacts&lt;/a&gt;
+...
+&lt;h2 id="contacts-header"&gt;Contacts&lt;/h2&gt;
+</code></pre>
+<p>When users click the Contacts link, they'll be taken to the section of the webpage with the <strong>Contacts</strong> header element.</p>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>Change your external link to an internal link by changing the href attribute to <code>#footer</code> and the text from "cat photos" to "Jump to Bottom".</p>
+<p>Remove the <code>target="_blank"</code> attribute from the anchor tag since this causes the linked document to open in a new window tab.</p>
+<p>Then add an <code>id</code> attribute with a value of "footer" to the <code>&lt;footer&gt;</code> element at the bottom of the page.</p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> There should be only one <code>a</code> anchor tag on your page <!-- count("a")===1 --></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> There should be only one <code>footer</code> tag on your page <!-- count("footer")===1 --></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> The <code>a</code> tag should have a <code>href</code> attribute set to <code>#footer</code> <!-- hasAttr("a","href","#footer") --></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> The <code>a</code> tag should not have a target attribute <!-- !hasAttr("a","target") --></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> The <code>a</code> text should be "Jump to Bottom" <!-- innerText("a", true)==="jump to bottom" --></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> The footer tag should have an id attribute set to "footer" <!-- hasAttr("footer","id","footer") --></li>
+</ul>
+        <hr />
+        <p>Prev: <a href="link-with-anchor-element.html">10. Link to External Pages with Anchor Elements</a></p>
+                <p>Next: <a href="nest-anchor-within-paragraph.html">12. Nest an Anchor Element within a Paragraph</a></p>
+        
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <!-- <div class="fcc-viewer"></div> -->
+      <iframe class="fcc-viewer" id="frameContent" src="about:blank"></iframe>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script>
+      let code = `<h2>CatPhotoApp</h2>
+<main>
+  <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>
+  <img src="../images/fcc-relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+</main>
+<footer>Copyright Cat Photo App</footer>
+`;
+      let asIframe = ``.indexOf("true") !== -1;
+    </script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>

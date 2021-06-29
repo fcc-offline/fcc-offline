@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Turn an Image into a Link</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="index.html">/Responsive Web Design
+</a>
+        <h1>14. Turn an Image into a Link</h1>
+        <!--
+title=Turn an Image into a Link
+code=<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <img src="../images/fcc-relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+</main>
+-->
+<p>You can make elements into links by nesting them within an <code>a</code> element.</p>
+<p>Nest your image within an <code>a</code> element. Here's an example:</p>
+<pre><code class="html language-html">&lt;a href="#"&gt;&lt;img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."&gt;&lt;/a&gt;
+</code></pre>
+<p>Remember to use <code>#</code> as your <code>a</code> element's <code>href</code> property in order to turn it into a dead link.</p>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>Place the existing image element within an <code>a</code> (anchor) element.</p>
+<p>Once you've done this, hover over your image with your cursor. Your cursor's normal pointer should become the link clicking pointer. The photo is now a link.</p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> The existing img element should be nested within an a element <!--count("a img")===1--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>a</code> element should be a dead link with a href attribute set to <code>#</code> <!--hasAttr("a","href","#")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Each of your a elements should have a closing tag <!--count("a")===countHTML("&lt;a")--></li>
+</ul>
+        <hr />
+        <p>Prev: <a href="make-dead-links-with-hash-symbol.html">13. Make Dead Links Using the Hash Symbol</a></p>
+                <p>Next: <a href="create-bulleted-unordered-list.html">15. Create a Bulleted Unordered List</a></p>
+        
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <!-- <div class="fcc-viewer"></div> -->
+      <iframe class="fcc-viewer" id="frameContent" src="about:blank"></iframe>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script>
+      let code = `<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <img src="../images/fcc-relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+</main>
+`;
+      let asIframe = ``.indexOf("true") !== -1;
+    </script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>

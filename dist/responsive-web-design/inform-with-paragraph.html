@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Inform with the Paragraph Element</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="index.html">/Responsive Web Design
+</a>
+        <h1>3. Inform with the Paragraph Element</h1>
+        <!--
+title=Inform with the Paragraph Element
+code=<h1>Hello</h1>\n<h2>CatPhotoApp</h2>
+-->
+<p><code>p</code> elements are the preferred element for paragraph text on websites. <code>p</code> is short for "paragraph".
+You can create a paragraph element like this:</p>
+<p><code>&lt;p&gt;I'm a p tag!&lt;/p&gt;</code></p>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>Create a p element below your h2 element, and give it the text <code>Hello Paragraph</code>.</p>
+<p>Note: As a convention, all HTML tags are written in lowercase, for example <code>&lt;p&gt;&lt;/p&gt;</code> and not <code>&lt;P&gt;&lt;/P&gt;</code>.</p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your code should have a valid <code>p</code> element <!--has("p")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>p</code> element should have the text "Hello Paragraph" <!--innerText("p") === "Hello Paragraph"--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>p</code> element should have a closing tag <!--hasHTML("</p")--></li>
+</ul>
+        <hr />
+        <p>Prev: <a href="headline-with-h2-element.html">2. Headline with h2 element</a></p>
+                <p>Next: <a href="placeholder.html">4. Fill in the Blank with Placeholder Text</a></p>
+        
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <!-- <div class="fcc-viewer"></div> -->
+      <iframe class="fcc-viewer" id="frameContent" src="about:blank"></iframe>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script>
+      let code = `<h1>Hello</h1>\n<h2>CatPhotoApp</h2>
+`;
+      let asIframe = ``.indexOf("true") !== -1;
+    </script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>

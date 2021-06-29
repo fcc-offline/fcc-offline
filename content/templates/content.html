@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{title}}</title>
+    <link href="{{public(styles/main.css)}}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="{{sub_dir_link}}">/{{sub_dir_name}}</a>
+        <h1>{{order}}. {{title}}</h1>
+        {{content}}
+        <hr />
+        <p>Prev: <a href="{{prev_url}}">{{prev_order}}. {{prev_name}}</a></p>
+        {{if globals.next_order}}
+        <p>Next: <a href="{{next_url}}">{{next_order}}. {{next_name}}</a></p>
+        {{endif}}
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <!-- <div class="fcc-viewer"></div> -->
+      <iframe class="fcc-viewer" id="frameContent" src="about:blank"></iframe>
+    </div>
+    <script src="{{public(scripts/codeflask.min.js)}}"></script>
+    <script src="{{public(scripts/inlineTests.js)}}"></script>
+    <script>
+      let code = `{{code}}`;
+      let asIframe = `{{as_frame}}`.indexOf("true") !== -1;
+    </script>
+    <script src="{{public(scripts/main.js)}}"></script>
+    <script>
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>

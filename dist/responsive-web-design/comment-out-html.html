@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Comment out HTML</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="index.html">/Responsive Web Design
+</a>
+        <h1>6. Comment out HTML</h1>
+        <!--
+title=Comment out HTML
+code=<h1>Hello</h1>\n<h2>CatPhotoApp</h2>\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+-->
+<p>Remember that in order to start a comment, you need to use <code>&lt;!--</code> and to end a comment, you need to use <code>--&gt;</code></p>
+<p>Here you'll need to end the comment before your <code>h2</code> element begins.</p>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>Comment out your <code>h1</code> element and your <code>p</code> element, but not your <code>h2</code> element.</p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>h1</code> element should be commented out so that it is not visible on the page <!--!has("h1")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>h2</code> element should not be commented out so that it is visible on the page <!--has("h2")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>p</code> element should be commented out so that it is not visible on the page  <!--!has("p")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Each of your comments should be closed with <code>--&gt;</code> <!--countHTML("--&gt;")--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> You should not change the order of the <code>h1</code>, <code>h2</code> or <code>p</code> in the code <!--elementOrdersHTML("h1","h2","p")--></li>
+</ul>
+        <hr />
+        <p>Prev: <a href="uncomment-html.html">5. Uncomment HTML</a></p>
+                <p>Next: <a href="delete-html-elements.html">7. Delete HTML Elements</a></p>
+        
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <!-- <div class="fcc-viewer"></div> -->
+      <iframe class="fcc-viewer" id="frameContent" src="about:blank"></iframe>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script>
+      let code = `<h1>Hello</h1>\n<h2>CatPhotoApp</h2>\n<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+`;
+      let asIframe = ``.indexOf("true") !== -1;
+    </script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>

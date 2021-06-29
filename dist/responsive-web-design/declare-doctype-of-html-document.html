@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Declare the Doctype of an HTML Document</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="index.html">/Responsive Web Design
+</a>
+        <h1>27. Declare the Doctype of an HTML Document</h1>
+        <!--
+title=Declare the Doctype of an HTML Document
+as_frame=true
+-->
+<p>The challenges so far have covered specific HTML elements and their uses. However, there are a few elements that give overall structure to your page, and should be included in every HTML document.</p>
+<p>At the top of your document, you need to tell the browser which version of HTML your page is using. HTML is an evolving language, and is updated regularly. Most major browsers support the latest specification, which is HTML5. However, older web pages may use previous versions of the language.</p>
+<p>You tell the browser this information by adding the <code>&lt;!DOCTYPE ...&gt;</code> tag on the first line, where the <code>...</code> part is the version of HTML. For HTML5, you use <code>&lt;!DOCTYPE html&gt;</code>.</p>
+<p>The <code>!</code> and uppercase <code>DOCTYPE</code> is important, especially for older browsers. The <code>html</code> is not case sensitive.</p>
+<p>Next, the rest of your HTML code needs to be wrapped in <code>html</code> tags. The opening <code>&lt;html&gt;</code> goes directly below the <code>&lt;!DOCTYPE html&gt;</code> line, and the closing <code>&lt;/html&gt;</code> goes at the end of the page.</p>
+<p>Here's an example of the page structure:</p>
+<pre><code class="html language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;!-- Your HTML code goes here --&gt;
+&lt;/html&gt;
+</code></pre>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>Add a <code>DOCTYPE</code> tag for HTML5 to the top of the blank HTML document in the code editor. Under it, add opening and closing <code>html</code> tags, which wrap around an <code>h1</code> element. The heading can include any text.</p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your code should include a <code>&lt;!DOCTYPE html&gt;</code> tag <!--docCountHTML("doctype html")===1--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> There should be one <code>html</code> element  <!--docCountHTML("&lt;html&gt;")===1--></li>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> The <code>html</code> tags should wrap around one <code>h1</code> element <!--docElementOrdersString("&lt;html","&lt;h1")--></li>
+</ul>
+        <hr />
+        <p>Prev: <a href="nest-elements-inside-a-div.html">26. Nest Many Elements within a Single div Element</a></p>
+                <p>Next: <a href="define-head-body-of-document.html">28. Define the Head and Body of an HTML Document</a></p>
+        
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <!-- <div class="fcc-viewer"></div> -->
+      <iframe class="fcc-viewer" id="frameContent" src="about:blank"></iframe>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script>
+      let code = ``;
+      let asIframe = `true
+`.indexOf("true") !== -1;
+    </script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>

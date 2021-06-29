@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fill in the Blank with Placeholder Text</title>
+    <link href="../styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="fcc-view">
+      <div class="fcc-content">
+        <a href="index.html">/Responsive Web Design
+</a>
+        <h1>4. Fill in the Blank with Placeholder Text</h1>
+        <!--
+title=Fill in the Blank with Placeholder Text
+code=<h1>Hello</h1>\n<h2>CatPhotoApp</h2>\n<p>Hello Paragraph</p>
+-->
+<p>Web developers traditionally use lorem ipsum text as placeholder text. The lorem ipsum text is randomly scraped from a famous passage by Cicero of Ancient Rome.</p>
+<p>Lorem ipsum text has been used as placeholder text by typesetters since the 16th century, and this tradition continues on the web.</p>
+<p>Well, 5 centuries is long enough. Since we're building a CatPhotoApp, let's use something called "kitty ipsum text".</p>
+<hr />
+<h3 id="challenge">Challenge</h3>
+<p>Replace the text inside your <code>p</code> element with the first few words of this kitty ipsum text: <code>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</code></p>
+<ul>
+<li class="task-list-item" style="list-style-type: none;"><input type="checkbox" disabled style="margin: 0px 0.35em 0.25em -1.6em; vertical-align: middle;"> Your <code>p</code> element should contain the first few words of the provided <code>kitty ipsum</code> text <!--innerTextContains('p', 'kitty ipsum')--></li>
+</ul>
+        <hr />
+        <p>Prev: <a href="inform-with-paragraph.html">3. Inform with the Paragraph Element</a></p>
+                <p>Next: <a href="uncomment-html.html">5. Uncomment HTML</a></p>
+        
+        <div id="testPanel"></div>
+      </div>
+      <div class="fcc-editor" id="ffc-editor"></div>
+      <!-- <div class="fcc-viewer"></div> -->
+      <iframe class="fcc-viewer" id="frameContent" src="about:blank"></iframe>
+    </div>
+    <script src="../scripts/codeflask.min.js"></script>
+    <script src="../scripts/inlineTests.js"></script>
+    <script>
+      let code = `<h1>Hello</h1>\n<h2>CatPhotoApp</h2>\n<p>Hello Paragraph</p>
+`;
+      let asIframe = ``.indexOf("true") !== -1;
+    </script>
+    <script src="../scripts/main.js"></script>
+    <script>
+      if (code) {
+        cf.updateCode(code);
+      }
+    </script>
+  </body>
+</html>
